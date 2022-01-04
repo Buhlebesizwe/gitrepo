@@ -41,7 +41,7 @@ public class MultidDimensional_String_Challenge {
                 }
             }
         }
-        System.out.println("Ascendind oder");
+        System.out.println("Ascending order");
         for (int[] intArr1 : intArr) {
             for (int j = 0; j < intArr1.length; j++) {
                 System.out.print(intArr1[j] + ", ");
@@ -63,7 +63,7 @@ public class MultidDimensional_String_Challenge {
                 }
             }
         }
-        System.out.println("Descending oder");
+        System.out.println("Descending order");
         for (int[] intArr1 : intArr) {
             for (int j = 0; j < intArr1.length; j++) {
                 System.out.print(intArr1[j] + ", ");
@@ -71,5 +71,4 @@ public class MultidDimensional_String_Challenge {
             System.out.println("\n");
         }
     }
-
 }
