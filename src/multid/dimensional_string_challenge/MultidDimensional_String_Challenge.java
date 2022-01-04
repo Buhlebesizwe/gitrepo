@@ -26,21 +26,44 @@ public class MultidDimensional_String_Challenge {
                 intArr[i][j] = Integer.parseInt(arr[i][j]);
             }
         }
+
         int temp;
         for (int i = 0; i < intArr.length; i++) {
             for (int j = i + 1; j < intArr[i].length; j++) {
                 for (int k = 0; k < intArr.length; k++) {
-                    for (int f = k; f < intArr[i].length-1; f++) {
-                        if (intArr[k][f] > intArr[k][f+1]) {
+                    for (int f = k; f < intArr[i].length - 1; f++) {
+                        if (intArr[k][f] > intArr[k][f + 1]) {
                             temp = intArr[k][f];
-                            intArr[k][f] = intArr[k][f+1];
-                            intArr[k][f+1] = temp;
+                            intArr[k][f] = intArr[k][f + 1];
+                            intArr[k][f + 1] = temp;
                         }
                     }
                 }
             }
         }
+        System.out.println("Ascendind oder");
+        for (int[] intArr1 : intArr) {
+            for (int j = 0; j < intArr1.length; j++) {
+                System.out.print(intArr1[j] + ", ");
+            }
+            System.out.println("\n");
+        }
 
+        int temp1;
+        for (int i = 0; i < intArr.length; i++) {
+            for (int j = i + 1; j < intArr[i].length; j++) {
+                for (int k = 0; k < intArr.length; k++) {
+                    for (int f = k; f < intArr[i].length - 1; f++) {
+                        if (intArr[k][f] < intArr[k][f + 1]) {
+                            temp1 = intArr[k][f];
+                            intArr[k][f] = intArr[k][f + 1];
+                            intArr[k][f + 1] = temp1;
+                        }
+                    }
+                }
+            }
+        }
+        System.out.println("Descending oder");
         for (int[] intArr1 : intArr) {
             for (int j = 0; j < intArr1.length; j++) {
                 System.out.print(intArr1[j] + ", ");
